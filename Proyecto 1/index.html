@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!--El head es el que se comunica con el navegador-->
+    <!--Al iniciar el documento HTML necesitamos el autocompletado en emmet de ! -->
+<head>
+    <!--Tipo de letra que vamos a utilizar en la pagina web-->
+    <meta charset="UTF-8">
+
+    <!--Fuente del texto-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Titulo de la pestaña-->
+    <title>Bienes Raices</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!--Ya no se utilizan las etiquetas style para usar css-->
+
+    <!--Enlace con la hoja de estilos css-->
+    <link rel="stylesheet" href="css/normalice.css">
+    <!--Solo un archivo css-->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <!--El ingresar una imagen se hace con la etiqueta img-->
+    <!--La parte de src es la fuente de donde esta ubicada la imagen en el proyecto-->
+    <!--La parte de alt sirve para mostrar texto en caso que no carge la imagen-->
+    <!--Debemos hacer que al dar clic en la imagen del logotipo, nos diriga hacia la pagina principal-->
+    <!--Para eso utilizaremos a href-->
+    <!--El header es la parte de arriba de la pagina, la cual agrupa los diferentes componentes de navegacion y el titulo-->
+    <!--La etiqueta header agrupa la parte de a-->
+    <!--Inicio del header-->
+    <!--El id debe ser unico por documento-->
+    <header class ="site-header inicio">
+
+        <!--Centra el contenido-->
+        <div class="contenedor contenido-header">
+
+            <div class ="barra">
+                <a href="/">
+                   <img src="img/logo.svg" alt="Logotipo de bienes raices">
+                </a>
+                <!--Imagen de fondo-->
+    
+                <!--En el body esta toda la parte visual de la pagina web-->
+                <!--Solo hay 6 tipos de encabezados en html-->
+                <!--Los encabezados se escriben con la etiqueta h-->
+                <!--Normalmente solo se usan los encabezados de h1 hasta h3-->
+
+                <!--Los enlaces se crean con la etiqueta a de html-->
+                <!--Primero que el titulo necesitamos crear los enlaces-->
+                <!--Los enlaces hacia paginas externas se crean con el protocolo http:// -->
+                <!--Los enlaces hacia paginas locales se crean solamente colocando el nombre de la pagina.html-->
+                <!--Hay atributos para ingresar a una pagina que no es nuestra : target = "_blanck"-->
+                <nav class = "navegacion">
+                   <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                   <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+            <h1>Venta de Casas y Departamentos Exclusivos de lujo</h1>
+
+        </div>
+    <!--Fin del header-->
+    </header>
+
+    <!--Section es un cambio de seccion solo si cominezo con un h2-->
+    <section class ="contenedor seccion">
+        <h2 class = "fw-300 centrar-texto"> Más sobre nosotros</h2>
+
+        <div class ="iconos-nosotros">
+            <div class = "iconos">
+            <!--Colocamos la imagen correspondiente a seguridad-->
+            <!--Puedo cambiar el tamanio de la imagen con width= 600 o con heath= 1200-->
+                <img src="img/icono1.svg" alt= "Icono seguridad">
+                <h3 >Seguridad</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam minima beatae
+                officia nisi cumque, excepturi a eligendi perferendis. Corrupti nam dolorum vero
+                    sit consectetur nemo fugiat, cupiditate delectus molestiae tenetur.</p>
+            </div class = "iconos">
+
+            <div class = "iconos">
+                <!--Colocamos la imagen correspondiente a el mejor precio-->
+                <img src="img/icono2.svg" alt="Icono mejor precio">
+                <h3 >El mejor precio</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, rem error possimus 
+                quasi debitis facilis fuga, obcaecati culpa eaque sequi minima vero explicabo. Temporibus
+                vel corrupti accusantium, ab eius molestias.</p>
+            </div>
+
+            <div class = "iconos">
+                <!--Colocamos la imagen correspondiente a tiempo-->
+                <img src="img/icono3.svg" alt="Icono tiempo">
+                <h3 >A tiempo</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, nulla dolor error odit
+                earum autem labore ipsam. Vitae voluptatibus sit saepe magnam modi odit ea? Corrupti illum
+                quas voluptate quo?</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Aca esta el contenido principal-->
+    <main class = "seccion contenedor">
+
+        <h2 class = "fw-300 centrar-texto">Casas y departamentos en venta</h2>
+
+        <div class = "contenedor-anuncios">
+            <div class = "anuncio">
+                <!--Imagen-->
+                <img src="img/anuncio1.jpg" alt="Anuncio 1">
+                <div class = "contenido-anuncios">
+                    <!--Descripcion-->
+                    <h3>Casa de lujo en el lago</h3>
+                    <p>Casa en el lago con excelente vista y acabados de lujo e un excelente precio</p>
+                    <p class= "precio">$3.000.000</p>
+                    <a href="#" class = "boton boton-amarillo d-block">Ver propiedad</a>
+                </div>
+            </div>
+
+            <div class = "anuncio">
+                <!--Imagen-->
+                <img src="img/anuncio2.jpg" alt="Anuncio 2">
+                <div class = "contenido-anuncios">
+                    <!--Descripcion-->
+                    <h3>Casa terminados de lujo</h3>
+                    <p>Casa con diseño moderno, asi como tecnologia inteligente y amueblada</p>
+                    <p class= "precio">$2.000.000</p>
+                    <a href="#" class = "boton boton-amarillo d-block">Ver propiedad</a>
+                </div>
+            </div>
+
+            <div class = "anuncio">
+                <!--Imagen-->
+                <img src="img/anuncio3.jpg" alt="Anuncio 3">
+                <div class = "contenido-anuncios">
+                    <!--Descripcion-->
+                    <h3>Casa con alberca</h3>
+                    <p>Casa con alberca y acabados de lujo en la ciudad, excelente oportunidad</p>
+                    <p class= "precio">$3.000.000</p>
+                    <a href="#" class = "boton boton-amarillo d-block">Ver propiedad</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="ver-todas">
+            <a href="anuncios.html" class = "boton boton-verde">Ver todos</a>
+        </div>
+        <!--Los parrafos se esriben con la etiqueta p-->
+    <!--Para saltar de linea se necesita la etiqueta br, pero en mejor comenzar un nuevo parrafo-->
+    <!--Si colocamos el p*3 automaticamente habremos creado 3 parrafos-->
+    </main>
+
+    <section>
+        <!--Lo que mas se va a utilizar en los textos son enlaces, encabezados y parrafos-->   
+        <h2>Encuentra la casa de tus sueños</h2>
+        <p>Llena el formulario de contacto y un asesor se pondra 
+         en contacto contigo a la brevedad</p>
+        <a href="contacto.html">Contactanos</a>
+        <!--La etiqueta em sirve para hacer cursiva la letra, y la etiqueta strong sirve para dar
+        prioridad a una palabra frente al buscador de google-->
+    </section>
+
+    <section>
+        <h3>Nuestro blog</h3>
+
+        <!--El article cuando tenga un entrada de bloc, debe hablar por si mismo-->
+        <article>
+            <img src="img/blog1.jpg" alt="Entrada al blog">
+            <h4>Terraza  en el techo de tu casa</h4>
+            <p>Escrito el: <em>20/10/2019</em> por <em>admin</em></p>
+            <p>Consejos para construir una terraza en el techo de tu casas con los mejores materiales
+               y ahorrando dinero
+            </p>
+        </article>
+
+        <article>
+            <img src="img/blog2.jpg" alt="Entrada al blog 2">
+            <h4>Guia para la decoracion de tu hogar</h4>
+            <p>Escrito el: <em>20/10/2019</em> por <em>admin</em></p>
+            <p>Maximiza el espacio en tu hogar con esta guia, aprende a combinar muebles y colores para darle vida a tu espacio
+            </p>
+        </article>
+    </section>
+
+    <section>
+        <h3>Testimoniales</h3>
+        <!--El  blockquote solo se utiliza para testimoniales-->
+        <blockquote>El personal se comporto de una excelente forma, muy buena atencion y la casa
+             que me ofrecieron cumple con todas mis espectativas 
+         </blockquote>
+         
+          <p> -Alejandro Mora</p>
+    </section>
+
+    <footer>
+        <nav class ="navegacion">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="anuncios.html">Anuncios</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <p>Todos los derechos reservados 2010 &copy;</p>
+    </footer>
+</body>
+</html>
